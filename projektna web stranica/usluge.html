@@ -1,0 +1,210 @@
+<!-- usluge.html -->
+
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="DREAMS - Usluge">
+    <meta name="keywords" content="usluge, agencija, nekretnine">
+    <meta name="author" content="DREAMS Agencija">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DREAMS - Usluge</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, sans-serif;
+            overflow: visible;
+            background-image: url('pozadina.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            border-radius: 20px;
+            margin-bottom: 0;
+        }
+
+        header {
+            background-image: url('ny.jpg');
+            background-size: cover;
+            background-position: center;
+            color: rgba(255, 255, 255, 0.3);
+            padding: 10px;
+            text-align: left;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .agency-info {
+            border: 3px solid black;
+            border-radius: 10px;
+            padding: 15px;
+            display: inline-block;
+        }
+
+        header h1 {
+            margin: 0;
+            margin-right: 30px;
+            margin-left: 30px;
+            margin-top: 10px;
+            margin-bottom: 4px;
+            color: black;
+        }
+
+        header p {
+            margin-top: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s, color 0.3s;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        main {
+            position: relative;
+            z-index: 0;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .service-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        h2, h3, p {
+            color: #333;
+        }
+
+        footer {
+            margin-top: 20px;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 5px;
+            text-align: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            color: #333;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin-right: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .social-icons a img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="agency-info">
+            <h1>DREAMS AGENCY</h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">POČETNA STRANICA</a>
+        <a href="nekretnine.html">NEKRETNINE</a>
+        <a href="usluge.html">LOKACIJE</a>
+        <a href="kontakt.html">KONTAKT</a>
+        <a href="onama.html">O NAMA</a>
+    </nav>
+
+    <main>
+        <h2>LOKACIJE</h2>
+
+        <div class="service-card" data-count="2">
+            <h3>Provansa</h3>
+            <p>Ako ste zainteresirani za odmor, ili ste se odlucili za selidbu u provansu, ovdje mozete dobit pregled dostupnih nekretnina.</p>
+            <img src="provansa.jpg" alt="Provansa">
+        </div>
+
+        <div class="service-card" data-count="3">
+            <h3>Obala</h3>
+            <p>More, pjev galeba, cvrčci, sve što vam daje ljetni vibe je tu.</p>
+            <img src="obala.jpg" alt="Obala">
+        </div>
+
+        <div class="service-card" data-count="2">
+            <h3>Nizina</h3>
+            <p>Ako se te odlucili za selo, ili predgrađe, mirno mjesto, ovdje imate dostupne nekretnine baš za vas.</p>
+            <img src="nizina.jpg" alt="Nizina">
+        </div>
+
+        <div class="service-card" data-count="2">
+            <h3>Grad</h3>
+            <p>Na ovoj kartici ćete pronaći luksuzne gradske stanove i kuće koje naša agencija nudi, poslovni prostori također su tu, iznenadite se i sami klikom poakzivača.</p>
+            <img src="grad.jpg" alt="Grad">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content"></div>
+        <p>Copyright © 2024 DREAMS Agencija za nekretnine. Sva prava pridržana.</p>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/rene.kumic/" target="_blank">
+                <img src="facebook.jpg">
+            </a>
+            <a href="https://www.instagram.com/kumich__/" target="_blank">
+                <img src="twitter.jpg">
+            </a>
+            <a href="https://www.instagram.com/kumich__/" target="_blank">
+                <img src="instagram.jpg">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
